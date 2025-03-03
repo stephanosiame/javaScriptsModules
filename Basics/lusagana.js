@@ -19,6 +19,6 @@ module.exports = {
   preparationTimeInMinutes,
   totalTimeInMinutes
 };
-console.log(remainingMinutesInOven(30));  
+console.log("the time " + remainingMinutesInOven(30));  
 console.log(preparationTimeInMinutes(3));
 console.log(totalTimeInMinutes(3, 30));
