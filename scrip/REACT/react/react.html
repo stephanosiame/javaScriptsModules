@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <title>React</title>
+    </head>
+    <body>
+        <div id="App"></div>
+
+        <script type = "text/babel">
+            function Hello(props){
+                return <h1>Hello, {props.name}</h1>;
+            }
+            function App(){
+                return (
+                    <div>
+                        <Hello name ="Steph's"/>
+                        <Hello name = "Hus"/>
+                        <Hello name = "hasan"/>
+                    </div>
+                );
+            }
+            ReactDOM.render(<App />, document.querySelector('#App'));
+        </script>
+    </body>
+</html>
